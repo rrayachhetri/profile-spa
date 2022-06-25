@@ -15,16 +15,15 @@ const Nav = () => {
 
     ]
     const categorySelected = (name) => {
-        console.log(`${name} clicked`)
+        console.log(`${name} clicked!`)
     }
     return (
-        <header data-testid="header" className="flex-row px-1">
+        <header >
             <h2>
                 <a href="/">
                     <span role="img" aria-label="camera">📸</span>Oh Snap!
                 </a>
             </h2>
-
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2">
@@ -35,7 +34,7 @@ const Nav = () => {
                     <li className={"mx-2"}>
                         <span onClick={()=> categorySelected()}>Contact</span>
                     </li>
-                    {categories.map((category) => (
+                    {categories.map((category) => 
                         <li
                             className="mx-1"
                             key={category.name}
@@ -44,7 +43,7 @@ const Nav = () => {
                                 {capitalizeFirstLetter(category.name)}
                             </span>
                         </li>
-                    ))}
+                    )}
                 </ul>
             </nav>
         </header>
