@@ -11,13 +11,12 @@ function App() {
       <main>
 
         <Gallery />
-
+        
         <About />
-
+        
       </main>
 
     </div>
   );
 }
-
 export default App;

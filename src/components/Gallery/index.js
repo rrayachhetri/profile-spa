@@ -4,12 +4,12 @@ import photo from "../../assets/small/commercial/0.jpg";
 
 
 
-function Gallery(props) {
+const Gallery = (props) =>  {
 
     const currentCategory = {
         name: "commercial",
         description: "Photos of grocery stores, food trucks, and other commercial projects",
-    };
+    }
 
     return (
         <section>
