@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import React, { useState } from 'react';
+// import {useState} from 'react';
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 
@@ -28,7 +28,7 @@ function Nav (props) {
                             About me
                         </a>
                     </li>
-                    <li className="mx-2"><span>Contact</span></li>
+                    <li className="mx-2"><span>Contact</span></li>   
 
                     {categories.map((category) => 
                         <li

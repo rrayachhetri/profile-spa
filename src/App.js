@@ -1,4 +1,4 @@
-import React from 'react';
+
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
@@ -18,19 +18,19 @@ function App() {
     
   ]);
 
-  const [CurrentCategory, setCurrentCategory] = useState(categories[0]);
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
 return (
   <div>
     <Nav 
     categories={categories}
     setCurrentCategory={setCurrentCategory}
-    CurrentCategory={CurrentCategory}
+    CurrentCategory={currentCategory}
     
   />
     <main>
 
-      <Gallery />
+      <Gallery currentCategory={currentCategory}/>
 
       <About />
 
