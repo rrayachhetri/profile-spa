@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Modal from '../Modal';
+// import Modal from '../Modal';
 // import photo from '../../assets/small/commercial/0.jpg';
 
-const PhotoList = ({ category }) => {
+const PhotoList = ({category}) => {
 
     const [photos] = useState([
         {
@@ -107,16 +107,16 @@ const PhotoList = ({ category }) => {
     return (
         <div>
             <div className="flex-row">
-                {photos.map((image, i) => (
+                {currentPhotos.map((image, i) => (
                     <img
-                        src={require('../../assets/small/${i}.jpg').default}
+                        src={require(`../../assets/small/${category}/${i}.jpg`).default}
                         alt={image.name}
                         className="img-thumbnail mx-1"
-                        key={image.name} />
+                        key={image.name}
+                    />
                 ))}
             </div>
-
         </div>
-    )
+    );
 }
 export default PhotoList;
