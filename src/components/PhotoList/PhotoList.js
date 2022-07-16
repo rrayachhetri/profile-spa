@@ -103,10 +103,13 @@ const PhotoList = ({category}) => {
     ]);
 
     const currentPhotos = photos.filter((photo)=> photo.category === category);
+    // the above filter method keep tracks which photo does user chooses from photos array i.e [photos] 
+    // which has a condition whereif selected photo form catefory is strictly equals to category
 
     return (
         <div>
             <div className="flex-row">
+                
                 {currentPhotos.map((image, i) => (
                     <img
                         src={require(`../../assets/small/${category}/${i}.jpg`).default}
