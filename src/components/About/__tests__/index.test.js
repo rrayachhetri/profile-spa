@@ -11,11 +11,11 @@ describe('About component', () => {
     });
 
     //second test
+    //expect function with a matcher to assert something about a value
     it('matches snapshot DOM node structure', () => {
         // render About
         const { asFragment } = render(<About />);
         expect(asFragment()).toMatchSnapshot();
     });
-    //expect function with a matcher to assert something about a value
 
 })
