@@ -14,10 +14,7 @@ afterEach(cleanup);
 
 describe('Nav component', () => {
     it('renders', () => {
-        render(<Nav
-          
-
-        />);
+        render(<Nav />);
     });
     //  categories={categories}
    // setCurrentCategory = { mockSetCurrentCategory }
@@ -40,9 +37,8 @@ describe('emoji is visible', () => {
 
 describe('links are visible', () => {
     it('inserts text into the links', () => {
-        const { getByTestId } = render(<Nav 
+        const { getByTestId } = render(<Nav />);
            
-            />);
         // categories={categories}
     //        setCurrentCategory = { mockSetCurrentCategory }
       //  currentCategory = { mockCurrentCategory } 

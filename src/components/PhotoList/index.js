@@ -121,5 +121,6 @@ const PhotoList = ({category}) => {
             </div>
         </div>
     );
-}
+};
 export default PhotoList;
+

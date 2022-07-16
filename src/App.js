@@ -25,7 +25,7 @@ return (
     <Nav 
     categories={categories}
     setCurrentCategory={setCurrentCategory}
-    CurrentCategory={currentCategory}
+    currentCategory={currentCategory}
     
   />
     <main>
